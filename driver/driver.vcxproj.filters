@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{61839c1c-fe0a-4962-929c-940fa30b461d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rewrite">
+      <UniqueIdentifier>{24d3320a-507e-4a3d-a2d5-7dfddd030194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rewrite\DrvMain">
+      <UniqueIdentifier>{ada67f2c-0530-425c-a0ef-2744c8d48e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rewrite\Headers">
+      <UniqueIdentifier>{b8137fc7-6d1a-42e8-8aeb-22a306a48720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rewrite\Agents">
+      <UniqueIdentifier>{c2b17300-0b5a-4bd5-a09b-86c13668d1d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rewrite\Agents\KmAgent">
+      <UniqueIdentifier>{8fe68df1-c595-429e-b4a7-ed3bb50ec036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rewrite\Agents\UmAgent">
+      <UniqueIdentifier>{03cffcc2-21d2-4135-9a86-9eaae862de6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="driver.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SystemSetup.cpp">
+      <Filter>Rewrite</Filter>
+    </ClCompile>
+    <ClCompile Include="DrvMain.cpp">
+      <Filter>Rewrite</Filter>
+    </ClCompile>
+    <ClCompile Include="KmAgent_ext.cpp">
+      <Filter>Rewrite\Agents\KmAgent</Filter>
+    </ClCompile>
+    <ClCompile Include="KmAgent_int.cpp">
+      <Filter>Rewrite\Agents\KmAgent</Filter>
+    </ClCompile>
+    <ClCompile Include="UmAgent.cpp">
+      <Filter>Rewrite\Agents\UmAgent</Filter>
+    </ClCompile>
+    <ClCompile Include="GodMem.cpp">
+      <Filter>Rewrite</Filter>
+    </ClCompile>
+    <ClCompile Include="Incloods.cpp">
+      <Filter>Rewrite\Headers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GodMem.h">
+      <Filter>Rewrite\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Incloods.h">
+      <Filter>Rewrite\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemSetup.h">
+      <Filter>Rewrite\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent.h">
+      <Filter>Rewrite\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="KmAgent_ext.h">
+      <Filter>Rewrite\Agents\KmAgent</Filter>
+    </ClInclude>
+    <ClInclude Include="KmAgent_int.h">
+      <Filter>Rewrite\Agents\KmAgent</Filter>
+    </ClInclude>
+    <ClInclude Include="UmAgent.h">
+      <Filter>Rewrite\Agents\UmAgent</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
